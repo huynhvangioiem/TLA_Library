@@ -1,0 +1,52 @@
+//config
+$banner-bc: #4fa4d8;
+
+.container {
+  background-color: aliceblue;
+  /* banner */
+  .banner {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-bottom: 5px solid $banner-bc;
+    position: relative;
+    .anhdaidien {
+      z-index: 9;
+      img {
+        border-color: #90b7d0;
+      }
+    }
+    .info {
+      align-self: center;
+      background-color: $banner-bc;
+      color: #fff;
+      padding-left: 35%;
+      padding-right: 50px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      .name {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        h1 {
+          margin-bottom: 5px;
+        }
+      }
+      .contact {
+        h4 {
+          margin-top: 4px;
+          margin-bottom: 4px;
+          i {
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  /* menu */
+  .menu {
+    margin-top: 5px;
+  }
+}
+/* Responsive */
+@import "resopsive.scss"

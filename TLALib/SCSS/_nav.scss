@@ -1,0 +1,20 @@
+// Navigation Style (SCSS)
+// Developed by TLA
+// version: 1.0
+// Date: 12/08/2021
+
+.navbar{
+  display: flex;
+  width: 100%;
+  .navbar-toggler{
+    display: none;
+  }
+  .navbar-collapse{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    .nav-item{
+      display: inline-block;
+    }
+  }
+}

@@ -1,0 +1,44 @@
+//Banner
+@media (max-width: 740px) {
+    .container {
+        /* banner */
+        .banner {
+            .info {
+                padding-left: 25%;
+                padding-right: 0px;
+                .name {
+                    h1 {
+                        font-size: 25px;
+                    }
+                }
+            }
+        }
+
+        /* menu */
+        .menu {
+        }
+    }
+}
+@media (max-width: 480px) {
+    .container {
+        /* banner */
+        .banner {
+            .info {
+                padding-left: 22%;
+                padding-right: 0px;
+                .name {
+                    h1 {
+                        font-size: 20px;
+                    }
+                    h3{
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+
+        /* menu */
+        .menu {
+        }
+    }
+}

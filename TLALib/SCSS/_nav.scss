@@ -1,20 +1,146 @@
 // Navigation Style (SCSS)
 // Developed by TLA
 // version: 1.0
-// Date: 12/08/2021
+// Date: 14/08/2021
 
-.navbar{
+%text {
+  color: inherit;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+.navbar {
   display: flex;
   width: 100%;
-  .navbar-toggler{
+  padding: 0 10px;
+  //navbar-light
+  &-light {
+    background-color: $lightColor;
+    color: rgba(0, 0, 0, 0.5);
+    .nav-item:hover {
+      a {
+        color: rgba(0, 0, 0, 0.7);
+      }
+    }
+  }
+  //navbar-dark
+  &-dark {
+    background-color: $darkColor;
+    color: rgba(255, 255, 255, 0.5);
+    .nav-item:hover {
+      a {
+        color: rgba(255, 255, 255, 0.75);
+      }
+    }
+  }
+  //navbar-primary
+  &-primary {
+    background-color: $primaryColor;
+    color: rgba(255, 255, 255, 0.8);
+    .nav-item:hover {
+      a {
+        color: rgba(255, 255, 255, 1);
+      }
+    }
+  }
+  //navbar-danger
+  &-danger {
+    background-color: $dangerColor;
+    color: rgba(255, 255, 255, 0.85);
+    .nav-item:hover {
+      a {
+        color: rgba(255, 255, 255, 1);
+      }
+    }
+  }
+  //navbar-success
+  &-success {
+    background-color: $successColor;
+    color: rgba(255, 255, 255, 0.85);
+    .nav-item:hover {
+      a {
+        color: rgba(255, 255, 255, 1);
+      }
+    }
+  }
+  //navbar-warning
+  &-warning {
+    background-color: $warningColor;
+    color: rgba(255, 255, 255, 0.85);
+    .nav-item:hover {
+      a {
+        color: rgba(255, 255, 255, 1);
+      }
+    }
+  }
+  //navbar-info
+  &-info {
+    background-color: $infoColor;
+    color: rgba(255, 255, 255, 0.85);
+    .nav-item:hover {
+      a {
+        color: rgba(255, 255, 255, 1);
+      }
+    }
+  }
+
+  // navbar-brand
+  &-brand {
+    align-self: center;
+    padding: 0 16px;
+    font-size: 20px;
+    @extend %text;
+  }
+  // navbar-toggler
+  &-toggler {
     display: none;
   }
-  .navbar-collapse{
+  // navbar-collapse
+  &-collapse {
     display: flex;
     width: 100%;
     justify-content: space-between;
-    .nav-item{
-      display: inline-block;
+    .navbar-nav {
+      .nav-item {
+        display: inline-block;
+        text-transform: uppercase;
+        position: relative;
+        margin-left: -4px;
+        a {
+          @extend %text;
+          display: block;
+          padding: 12px;
+          transition: all 0.2s linear;
+        }
+        &:not(&:last-child, .nav-search) {
+          &::after {
+            content: "";
+            position: absolute;
+            height: 50%;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+            border-right: 2px solid white;
+          }
+        }
+      }
+      .nav-search {
+        %search {
+          padding: 5px;
+          font-size: 16px;
+          @extend %border-outline_None;
+        }
+        form {
+          background-color: #fff;
+          input[type="text"] {
+            @extend %search;
+          }
+          button {
+            cursor: pointer;
+            margin-left: -4px;
+            @extend %search;
+          }
+        }
+      }
     }
   }
 }

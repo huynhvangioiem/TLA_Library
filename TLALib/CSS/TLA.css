@@ -14,6 +14,11 @@
   margin-left: 0;
 }
 
+.navbar-collapse .navbar-nav .nav-search form input[type="text"], .navbar-collapse .navbar-nav .nav-search form button {
+  border: none;
+  outline: none;
+}
+
 /* Reset CSS */
 * {
   padding: 0;
@@ -1565,20 +1570,109 @@ a {
   }
 }
 /* TLA Nav */
+.navbar-brand, .navbar-collapse .navbar-nav .nav-item a {
+  color: inherit;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
 .navbar {
   display: flex;
   width: 100%;
+  padding: 0 10px;
 }
-.navbar .navbar-toggler {
+.navbar-light {
+  background-color: #e2e6ea;
+  color: rgba(0, 0, 0, 0.5);
+}
+.navbar-light .nav-item:hover a {
+  color: rgba(0, 0, 0, 0.7);
+}
+.navbar-dark {
+  background-color: #23272b;
+  color: rgba(255, 255, 255, 0.5);
+}
+.navbar-dark .nav-item:hover a {
+  color: rgba(255, 255, 255, 0.75);
+}
+.navbar-primary {
+  background-color: #0069d9;
+  color: rgba(255, 255, 255, 0.8);
+}
+.navbar-primary .nav-item:hover a {
+  color: white;
+}
+.navbar-danger {
+  background-color: #c82333;
+  color: rgba(255, 255, 255, 0.85);
+}
+.navbar-danger .nav-item:hover a {
+  color: white;
+}
+.navbar-success {
+  background-color: #218838;
+  color: rgba(255, 255, 255, 0.85);
+}
+.navbar-success .nav-item:hover a {
+  color: white;
+}
+.navbar-warning {
+  background-color: #e0a800;
+  color: rgba(255, 255, 255, 0.85);
+}
+.navbar-warning .nav-item:hover a {
+  color: white;
+}
+.navbar-info {
+  background-color: #138496;
+  color: rgba(255, 255, 255, 0.85);
+}
+.navbar-info .nav-item:hover a {
+  color: white;
+}
+.navbar-brand {
+  align-self: center;
+  padding: 0 16px;
+  font-size: 20px;
+}
+.navbar-toggler {
   display: none;
 }
-.navbar .navbar-collapse {
+.navbar-collapse {
   display: flex;
   width: 100%;
   justify-content: space-between;
 }
-.navbar .navbar-collapse .nav-item {
+.navbar-collapse .navbar-nav .nav-item {
   display: inline-block;
+  text-transform: uppercase;
+  position: relative;
+  margin-left: -4px;
+}
+.navbar-collapse .navbar-nav .nav-item a {
+  display: block;
+  padding: 12px;
+  transition: all 0.2s linear;
+}
+.navbar-collapse .navbar-nav .nav-item:not(.navbar-collapse .navbar-nav .nav-item:last-child, .nav-search)::after {
+  content: "";
+  position: absolute;
+  height: 50%;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  border-right: 2px solid white;
+}
+.navbar-collapse .navbar-nav .nav-search form input[type="text"], .navbar-collapse .navbar-nav .nav-search form button {
+  padding: 5px;
+  font-size: 16px;
+}
+.navbar-collapse .navbar-nav .nav-search form {
+  background-color: #fff;
+}
+.navbar-collapse .navbar-nav .nav-search form button {
+  cursor: pointer;
+  margin-left: -4px;
 }
 
 /* TLA Button */

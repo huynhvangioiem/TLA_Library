@@ -52,20 +52,26 @@
         <input type="checkbox" name="" id="nav-check" hidden>
         <div class="navbar-collapse">
           <ul class="navbar-nav navbar-left">
-            <li class="nav-item active">
+            <li class="nav-item">
               <a class="nav-link" href="./">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#layouts">Layout</a>
+              <ul class="sub-nav">
+                <li class="nav-item"><a href="">sub 1</a></li>
+                <li class="nav-item">
+                  <ul class="sub-nav">
+                    <li class="nav-item"><a href="">sub 1</a></li>
+                    <li class="nav-item"><a href="">sub 2</a></li>
+                    <li class="nav-item"><a href="">sub 3</a></li>
+                  </ul>
+                  <a href="">sub 2</a>
+                </li>
+                <li class="nav-item"><a href="">sub 3</a></li>
+              </ul>
+              <a class="nav-link">TLA Library</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#nav">Navigation</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#button">Button</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#toast">Toast Message</a>
+              <a class="nav-link" href="#profile">My Profile</a>
             </li>
           </ul>
           <ul class="navbar-nav navbar-right">
@@ -75,7 +81,7 @@
                 <button type="submit"><i class="fas fa-search"></i></button>
               </form>
             </li>
-            <li class="nav-item active">
+            <li class="nav-item">
               <a class="nav-link" href="#">Sign In</a>
             </li>
             <li class="nav-item">
@@ -85,10 +91,18 @@
         </div>
       </nav>
     </div>
-    <!-- <div class="row TLA_layout">lay out</div>
+    <div class="row TLA_layout">lay out</div>
     <div class="row TLA_nav">nav</div>
     <div class="row TLA_button">Button</div>
-    <div class="row TLA_toast">Toast MSG</div> -->
+    <div class="row TLA_toast">Toast MSG</div>
+    <div class="row TLA_layout">lay out</div>
+    <div class="row TLA_nav">nav</div>
+    <div class="row TLA_button">Button</div>
+    <div class="row TLA_toast">Toast MSG</div>
+    <div class="row TLA_layout">lay out</div>
+    <div class="row TLA_nav">nav</div>
+    <div class="row TLA_button">Button</div>
+    <div class="row TLA_toast">Toast MSG</div>
   </div>
 </body>
 

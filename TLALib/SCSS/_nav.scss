@@ -12,8 +12,130 @@
   display: flex;
   width: 100%;
   padding: 0 10px;
-  // min-height: 50px;
   align-items: center;
+
+  // navbar-brand
+  &-brand {
+    align-self: center;
+    padding: 0 16px;
+    font-size: 20px;
+    @extend %text;
+  }
+
+  // navbar-toggler
+  &-toggler {
+    display: none;
+  }
+
+  // navbar-collapse
+  &-collapse {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+    // navbar-nav
+    .navbar-nav {
+      // navbar-item for all
+      .nav-item {
+        cursor: pointer;
+        position: relative;
+        // link
+        a {
+          @extend %text;
+          display: block;
+          padding: 12px;
+          transition: all 0.2s linear;
+        }
+        // .nav-item .subnav (all sub)
+        .sub-nav {
+          display: none;
+          position: absolute;
+          // .sub-nav .nav-item
+          .nav-item {
+            z-index: 9;
+            box-shadow: 0px 2px 5px #f1f1f1;
+            border-bottom: 1px solid #f1f1f1;
+            a {
+              color: #000;
+              opacity: 0.75;
+              text-transform: capitalize;
+              background-color: #fff;
+            }
+            &:hover {
+              > a {
+                background-color: #f9f9f9;
+              }
+            }
+            > .sub-nav {
+              left: 100%;
+              top: 0;
+              padding-left: 15px;
+              box-sizing: content-box;
+                width: 100%;
+            }
+          }
+          .sub-nav + a::after {
+            content: "";
+            float: right;
+            border-style: solid;
+            border-width: 5px 0 5px 5px;
+            border-color: transparent transparent transparent #9a9a9a;
+            margin-top: 1px;
+          }
+        }
+        &:hover {
+          > .sub-nav {
+            display: block;
+          }
+        }
+      }
+
+      // navbar-item for lv1
+      > .nav-item {
+        display: inline-block;
+        text-transform: uppercase;
+        margin-left: -4px;
+        // .nav-item::after
+        &:not(&:last-child, .nav-search) {
+          &::after {
+            content: "";
+            position: absolute;
+            height: 50%;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+            border-right: 2px solid white;
+          }
+        }
+        // > .nav-item > .subnav (sub 1)
+        > .sub-nav {
+          top: 100%;
+          right: 0;
+          left: 0;
+        }
+      }
+      //nav-search
+      .nav-search {
+        %search {
+          padding: 5px;
+          font-size: 16px;
+          @extend %border-outline_None;
+        }
+        form {
+          background-color: #fff;
+          input[type="text"] {
+            @extend %search;
+          }
+          button {
+            cursor: pointer;
+            margin-left: -4px;
+            @extend %search;
+          }
+        }
+      }
+    }
+  }
+
   //navbar-light
   &-light {
     background-color: $lightColor;
@@ -84,75 +206,16 @@
       }
     }
   }
-
-  // navbar-brand
-  &-brand {
-    align-self: center;
-    padding: 0 16px;
-    font-size: 20px;
-    @extend %text;
-  }
-  // navbar-toggler
-  &-toggler {
-    display: none;
-  }
-  // navbar-collapse
-  &-collapse {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    .navbar-nav {
-      .nav-item {
-        display: inline-block;
-        text-transform: uppercase;
-        position: relative;
-        margin-left: -4px;
-        a {
-          @extend %text;
-          display: block;
-          padding: 12px;
-          transition: all 0.2s linear;
-        }
-        &:not(&:last-child, .nav-search) {
-          &::after {
-            content: "";
-            position: absolute;
-            height: 50%;
-            top: 50%;
-            right: 0;
-            transform: translateY(-50%);
-            border-right: 2px solid white;
-          }
-        }
-      }
-      .nav-search {
-        %search {
-          padding: 5px;
-          font-size: 16px;
-          @extend %border-outline_None;
-        }
-        form {
-          background-color: #fff;
-          input[type="text"] {
-            @extend %search;
-          }
-          button {
-            cursor: pointer;
-            margin-left: -4px;
-            @extend %search;
-          }
-        }
-      }
-    }
-  }
 }
 // responsive
 @media (max-width: 1280px) {
   .navbar {
-    &-nav {
-      .nav-search {
-        input[type="text"] {
-          width: 150px;
+    &-collapse {
+      .navbar-nav {
+        .nav-search {
+          input[type="text"] {
+            width: 150px;
+          }
         }
       }
     }
@@ -161,15 +224,17 @@
 @media (max-width: 1024px) {
   .navbar {
     padding: 0px;
-    &-nav {
-      .nav-item{
-        a{
-          padding-left: 10px;
-          padding-right: 10px;
+    &-collapse {
+      .navbar-nav {
+        .nav-item {
+          a {
+            padding-left: 10px;
+            padding-right: 10px;
+          }
         }
-      }
-      .nav-search {
-        display: none;
+        .nav-search {
+          display: none;
+        }
       }
     }
   }
@@ -178,35 +243,61 @@
   .navbar {
     flex-wrap: wrap;
     justify-content: space-between;
-    &-collapse{
-      display: none;
-    }
-    &-toggler{
-      display:inline-block;
+    &-toggler {
+      display: inline-block;
       padding: 15px;
     }
-    #nav-check:checked{
-      ~ .navbar-collapse{
+    #nav-check:checked {
+      ~ .navbar-collapse {
         display: block;
       }
     }
-    // 
-    &-collapse{
-      .navbar-nav{
-        .nav-item{
-          display: block;
+    &-collapse {
+      display: none;
+      .navbar-nav {
+        .nav-item {
+          display: flex;
+          flex-direction: column-reverse;
+          flex-wrap: wrap;
           margin-left: unset;
-          border-top: 1px solid #ccc;
-          &:hover{
-            background-color: rgba(0,0,0,0.2);
+          border-top: 1px solid #f1f1f1;
+          a {
+            flex: 0 0 100%;
           }
-          &::after{
+          &::after {
             content: none !important;
           }
+          &:hover {
+            > a {
+              background-color: rgba(0, 0, 0, 0.2);
+            }
+          }
+          .sub-nav {
+            display: block;
+            position: relative;
+            flex: 0 0 100%;
+            padding-left: 25px !important;
+            top: unset !important;
+            left: unset !important;
+            .nav-item {
+              background-color: unset;
+              box-shadow: unset;
+              border: none;
+              a {
+                background-color: inherit;
+                color: inherit;
+              }
+              &:hover {
+                > a {
+                  background-color: rgba(0, 0, 0, 0.2);
+                }
+              }
+            }
+          }
         }
-        .nav-search{
+        .nav-search {
           padding: 5px;
-          form{
+          form {
             display: flex;
           }
           input[type="text"] {

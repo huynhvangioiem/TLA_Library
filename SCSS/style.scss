@@ -46,6 +46,10 @@ $banner-bc: #4fa4d8;
   /* menu */
   .menu {
     margin-top: 5px;
+    .navbar-brand{
+      display: none;
+    }
+
   }
 }
 /* Responsive */

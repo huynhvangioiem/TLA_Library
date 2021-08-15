@@ -42,6 +42,9 @@
 .container .menu {
   margin-top: 5px;
 }
+.container .menu .navbar-brand {
+  display: none;
+}
 
 /* Responsive */
 @media (max-width: 740px) {
@@ -55,6 +58,9 @@
   }
   .container .banner .info .name h1 {
     font-size: 25px;
+  }
+  .container .menu .navbar-brand {
+    display: block;
   }
 }
 @media (max-width: 480px) {

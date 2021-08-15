@@ -1776,6 +1776,7 @@ a {
     padding-left: 25px !important;
     top: unset !important;
     left: unset !important;
+    width: auto !important;
   }
   .navbar-collapse .navbar-nav .nav-item .sub-nav .nav-item {
     background-color: unset;
@@ -1785,6 +1786,9 @@ a {
   .navbar-collapse .navbar-nav .nav-item .sub-nav .nav-item a {
     background-color: inherit;
     color: inherit;
+  }
+  .navbar-collapse .navbar-nav .nav-item .sub-nav .nav-item a::after {
+    content: none;
   }
   .navbar-collapse .navbar-nav .nav-item .sub-nav .nav-item:hover > a {
     background-color: rgba(0, 0, 0, 0.2);

@@ -1,13 +1,14 @@
 //config
 $banner-bc: #4fa4d8;
-
+html{
+  scroll-behavior: smooth;
+}
 .container {
   background-color: aliceblue;
   /* banner */
   .banner {
     padding-top: 25px;
     padding-bottom: 25px;
-    border-bottom: 5px solid $banner-bc;
     position: relative;
     .anhdaidien {
       z-index: 9;
@@ -25,7 +26,8 @@ $banner-bc: #4fa4d8;
       left: 0;
       right: 0;
       .name {
-        margin: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
         h1 {
           margin-bottom: 5px;
         }
@@ -42,14 +44,80 @@ $banner-bc: #4fa4d8;
     }
   }
 
+  /* welcome */
+  .welcome {
+    border-bottom: 5px solid $banner-bc;
+    height: 50px;
+    color: chartreuse;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: darkorange;
+    letter-spacing: 2px;
+    align-items: center;
+  }
   /* menu */
   .menu {
     margin-top: 5px;
-    .navbar-brand{
+    .navbar-brand {
       display: none;
     }
-
   }
 }
 /* Responsive */
-@import "resopsive.scss"
+@import "resopsive.scss";
+
+/* CSS For library.html */
+%demo {
+  .container-fluid {
+    background-color: #fff;
+    text-align: center;
+  }
+}
+.container.library {
+  .layout {
+    .title {
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+    .sub_title {
+      text-transform: capitalize;
+      font-weight: bold;
+    }
+    .demo {
+      @extend %demo;
+      font-size: 20px;
+      .row {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        > div {
+          padding-top: 10px;
+          padding-bottom: 10px;
+          border: 1px solid #fff;
+          background-color: #ccc;
+        }
+      }
+      //demo for nested
+      &.nested {
+        .container-fluid {
+          background-color: #ccc;
+          .row {
+            margin-top: unset;
+            margin-bottom: unset;
+            align-items: center;
+          }
+        }
+      }
+    }
+    .example{
+      background-color: #fff;
+      padding: 10px;
+      padding-left: 40px;
+      list-style-type: decimal;
+    }
+    .code {
+      code {
+        font-size: 16px;
+      }
+    }
+  }
+}

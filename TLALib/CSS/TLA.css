@@ -65,50 +65,74 @@ a {
 .row .col-1 {
   flex: 0 0 8.3333333333%;
   max-width: 8.3333333333%;
+  margin-left: auto;
+  margin-right: auto;
 }
 .row .col-2 {
   flex: 0 0 16.6666666667%;
   max-width: 16.6666666667%;
+  margin-left: auto;
+  margin-right: auto;
 }
 .row .col-3 {
   flex: 0 0 25%;
   max-width: 25%;
+  margin-left: auto;
+  margin-right: auto;
 }
 .row .col-4 {
   flex: 0 0 33.3333333333%;
   max-width: 33.3333333333%;
+  margin-left: auto;
+  margin-right: auto;
 }
 .row .col-5 {
   flex: 0 0 41.6666666667%;
   max-width: 41.6666666667%;
+  margin-left: auto;
+  margin-right: auto;
 }
 .row .col-6 {
   flex: 0 0 50%;
   max-width: 50%;
+  margin-left: auto;
+  margin-right: auto;
 }
 .row .col-7 {
   flex: 0 0 58.3333333333%;
   max-width: 58.3333333333%;
+  margin-left: auto;
+  margin-right: auto;
 }
 .row .col-8 {
   flex: 0 0 66.6666666667%;
   max-width: 66.6666666667%;
+  margin-left: auto;
+  margin-right: auto;
 }
 .row .col-9 {
   flex: 0 0 75%;
   max-width: 75%;
+  margin-left: auto;
+  margin-right: auto;
 }
 .row .col-10 {
   flex: 0 0 83.3333333333%;
   max-width: 83.3333333333%;
+  margin-left: auto;
+  margin-right: auto;
 }
 .row .col-11 {
   flex: 0 0 91.6666666667%;
   max-width: 91.6666666667%;
+  margin-left: auto;
+  margin-right: auto;
 }
 .row .col-12 {
   flex: 0 0 100%;
   max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 .row .col-o-0 {
   margin-left: 0%;
@@ -582,50 +606,74 @@ a {
   .row .col-m-1 {
     flex: 0 0 8.3333333333%;
     max-width: 8.3333333333%;
+    margin-left: auto;
+    margin-right: auto;
   }
   .row .col-m-2 {
     flex: 0 0 16.6666666667%;
     max-width: 16.6666666667%;
+    margin-left: auto;
+    margin-right: auto;
   }
   .row .col-m-3 {
     flex: 0 0 25%;
     max-width: 25%;
+    margin-left: auto;
+    margin-right: auto;
   }
   .row .col-m-4 {
     flex: 0 0 33.3333333333%;
     max-width: 33.3333333333%;
+    margin-left: auto;
+    margin-right: auto;
   }
   .row .col-m-5 {
     flex: 0 0 41.6666666667%;
     max-width: 41.6666666667%;
+    margin-left: auto;
+    margin-right: auto;
   }
   .row .col-m-6 {
     flex: 0 0 50%;
     max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
   }
   .row .col-m-7 {
     flex: 0 0 58.3333333333%;
     max-width: 58.3333333333%;
+    margin-left: auto;
+    margin-right: auto;
   }
   .row .col-m-8 {
     flex: 0 0 66.6666666667%;
     max-width: 66.6666666667%;
+    margin-left: auto;
+    margin-right: auto;
   }
   .row .col-m-9 {
     flex: 0 0 75%;
     max-width: 75%;
+    margin-left: auto;
+    margin-right: auto;
   }
   .row .col-m-10 {
     flex: 0 0 83.3333333333%;
     max-width: 83.3333333333%;
+    margin-left: auto;
+    margin-right: auto;
   }
   .row .col-m-11 {
     flex: 0 0 91.6666666667%;
     max-width: 91.6666666667%;
+    margin-left: auto;
+    margin-right: auto;
   }
   .row .col-m-12 {
     flex: 0 0 100%;
     max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
   }
   .row .col-m-o-0 {
     margin-left: 0%;
@@ -1088,50 +1136,74 @@ a {
   .row .col-s-1 {
     flex: 0 0 8.3333333333%;
     max-width: 8.3333333333%;
+    margin-left: auto;
+    margin-right: auto;
   }
   .row .col-s-2 {
     flex: 0 0 16.6666666667%;
     max-width: 16.6666666667%;
+    margin-left: auto;
+    margin-right: auto;
   }
   .row .col-s-3 {
     flex: 0 0 25%;
     max-width: 25%;
+    margin-left: auto;
+    margin-right: auto;
   }
   .row .col-s-4 {
     flex: 0 0 33.3333333333%;
     max-width: 33.3333333333%;
+    margin-left: auto;
+    margin-right: auto;
   }
   .row .col-s-5 {
     flex: 0 0 41.6666666667%;
     max-width: 41.6666666667%;
+    margin-left: auto;
+    margin-right: auto;
   }
   .row .col-s-6 {
     flex: 0 0 50%;
     max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
   }
   .row .col-s-7 {
     flex: 0 0 58.3333333333%;
     max-width: 58.3333333333%;
+    margin-left: auto;
+    margin-right: auto;
   }
   .row .col-s-8 {
     flex: 0 0 66.6666666667%;
     max-width: 66.6666666667%;
+    margin-left: auto;
+    margin-right: auto;
   }
   .row .col-s-9 {
     flex: 0 0 75%;
     max-width: 75%;
+    margin-left: auto;
+    margin-right: auto;
   }
   .row .col-s-10 {
     flex: 0 0 83.3333333333%;
     max-width: 83.3333333333%;
+    margin-left: auto;
+    margin-right: auto;
   }
   .row .col-s-11 {
     flex: 0 0 91.6666666667%;
     max-width: 91.6666666667%;
+    margin-left: auto;
+    margin-right: auto;
   }
   .row .col-s-12 {
     flex: 0 0 100%;
     max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
   }
   .row .col-s-o-0 {
     margin-left: 0%;

@@ -10,6 +10,8 @@
         &-#{$i} {
             flex: 0 0 $value;
             max-width: $value;
+            margin-left: auto;
+            margin-right: auto;
             @extend %paddingDistance_PC;
         }
     }
@@ -20,6 +22,8 @@
         &-#{$i} {
             flex: 0 0 $value;
             max-width: $value;
+            margin-left: auto;
+            margin-right: auto;
             @extend %paddingDistance-Tab, %blockTab;
         }
     }
@@ -30,6 +34,8 @@
         &-#{$i} {
             flex: 0 0 $value;
             max-width: $value;
+            margin-left: auto;
+            margin-right: auto;
             @extend %paddingDistance-Mobile, %blockMobile;
         }
     }

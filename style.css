@@ -1,12 +1,16 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .container {
   background-color: aliceblue;
   /* banner */
+  /* welcome */
   /* menu */
 }
 .container .banner {
   padding-top: 25px;
   padding-bottom: 25px;
-  border-bottom: 5px solid #4fa4d8;
   position: relative;
 }
 .container .banner .anhdaidien {
@@ -26,7 +30,8 @@
   right: 0;
 }
 .container .banner .info .name {
-  margin: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 .container .banner .info .name h1 {
   margin-bottom: 5px;
@@ -37,6 +42,16 @@
 }
 .container .banner .info .contact h4 i {
   margin-right: 10px;
+}
+.container .welcome {
+  border-bottom: 5px solid #4fa4d8;
+  height: 50px;
+  color: chartreuse;
+  font-size: 25px;
+  font-weight: bold;
+  background-color: darkorange;
+  letter-spacing: 2px;
+  align-items: center;
 }
 .container .menu {
   margin-top: 5px;
@@ -77,4 +92,48 @@
   .container .banner .info .name h3 {
     font-size: 16px;
   }
+}
+/* CSS For library.html */
+.container.library .layout .demo .container-fluid {
+  background-color: #fff;
+  text-align: center;
+}
+
+.container.library .layout .title {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.container.library .layout .sub_title {
+  text-transform: capitalize;
+  font-weight: bold;
+}
+.container.library .layout .demo {
+  font-size: 20px;
+}
+.container.library .layout .demo .row {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.container.library .layout .demo .row > div {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 1px solid #fff;
+  background-color: #ccc;
+}
+.container.library .layout .demo.nested .container-fluid {
+  background-color: #ccc;
+}
+.container.library .layout .demo.nested .container-fluid .row {
+  margin-top: unset;
+  margin-bottom: unset;
+  align-items: center;
+}
+.container.library .layout .example {
+  background-color: #fff;
+  padding: 10px;
+  padding-left: 40px;
+  list-style-type: decimal;
+}
+.container.library .layout .code code {
+  font-size: 16px;
 }

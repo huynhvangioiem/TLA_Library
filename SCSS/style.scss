@@ -66,6 +66,51 @@ html{
 /* Responsive */
 @import "resopsive.scss";
 
+/* CSS For Home*/
+
+.container.home{
+  .main{
+    margin-top: 10px;
+    .left{
+      border-right: 1px solid $banner-bc;
+    }
+    .items{
+      border-top: 1px solid $banner-bc;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      .title{
+        margin-bottom: 5px;
+        h3{
+          text-transform: uppercase;
+          color: $banner-bc;
+          font-weight: bold;
+        }
+      }
+      .content{
+        font-size: 18px;
+        text-align: justify;
+      }
+    }
+    #skills,#interest{
+      .content{
+        ul{
+          list-style: circle;
+          padding-left: 20px;
+          li{
+            p{
+              display: inline-block;
+              min-width:50%
+            }
+            i{
+              color: $banner-bc;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 /* CSS For library.html */
 %demo {
   .container-fluid {

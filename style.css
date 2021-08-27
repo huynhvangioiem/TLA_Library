@@ -93,6 +93,42 @@ html {
     font-size: 16px;
   }
 }
+/* CSS For Home*/
+.container.home .main {
+  margin-top: 10px;
+}
+.container.home .main .left {
+  border-right: 1px solid #4fa4d8;
+}
+.container.home .main .items {
+  border-top: 1px solid #4fa4d8;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.container.home .main .items .title {
+  margin-bottom: 5px;
+}
+.container.home .main .items .title h3 {
+  text-transform: uppercase;
+  color: #4fa4d8;
+  font-weight: bold;
+}
+.container.home .main .items .content {
+  font-size: 18px;
+  text-align: justify;
+}
+.container.home .main #skills .content ul, .container.home .main #interest .content ul {
+  list-style: circle;
+  padding-left: 20px;
+}
+.container.home .main #skills .content ul li p, .container.home .main #interest .content ul li p {
+  display: inline-block;
+  min-width: 50%;
+}
+.container.home .main #skills .content ul li i, .container.home .main #interest .content ul li i {
+  color: #4fa4d8;
+}
+
 /* CSS For library.html */
 .container.library .layout .demo .container-fluid {
   background-color: #fff;

@@ -1,5 +1,6 @@
 html {
   scroll-behavior: smooth;
+  line-height: 1.5;
 }
 
 .container {
@@ -127,6 +128,9 @@ html {
 }
 .container.home .main #skills .content ul li i, .container.home .main #interest .content ul li i {
   color: #4fa4d8;
+}
+.container.home .main #workExperience .content + .content {
+  margin-top: 15px;
 }
 
 /* CSS For library.html */

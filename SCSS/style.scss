@@ -2,6 +2,7 @@
 $banner-bc: #4fa4d8;
 html{
   scroll-behavior: smooth;
+  line-height: 1.5;
 }
 .container {
   background-color: aliceblue;
@@ -106,6 +107,11 @@ html{
             }
           }
         }
+      }
+    }
+    #workExperience{
+      .content+.content{
+        margin-top: 15px;
       }
     }
   }

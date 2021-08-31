@@ -8,6 +8,7 @@ html {
   /* banner */
   /* welcome */
   /* menu */
+  /*Footer*/
 }
 .container .banner {
   padding-top: 25px;
@@ -59,6 +60,13 @@ html {
 }
 .container .menu .navbar-brand {
   display: none;
+}
+.container .footer {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #90b7d0;
+  color: #fff;
+  font-size: 18px;
 }
 
 /* Responsive */

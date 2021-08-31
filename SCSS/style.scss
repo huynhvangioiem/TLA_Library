@@ -63,6 +63,14 @@ html{
       display: none;
     }
   }
+  /*Footer*/
+  .footer{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #90b7d0;
+    color:#fff;
+    font-size: 18px;
+  }
 }
 /* Responsive */
 @import "resopsive.scss";

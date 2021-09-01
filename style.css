@@ -26,7 +26,6 @@ html {
   background-color: #4fa4d8;
   color: #fff;
   padding-left: 35%;
-  padding-right: 50px;
   position: absolute;
   left: 0;
   right: 0;
@@ -69,44 +68,6 @@ html {
   font-size: 18px;
 }
 
-/* Responsive */
-@media (max-width: 740px) {
-  .container {
-    /* banner */
-    /* menu */
-  }
-  .container .banner .info {
-    padding-left: 25%;
-    padding-right: 0px;
-  }
-  .container .banner .info .name h1 {
-    font-size: 25px;
-  }
-  .container .menu .navbar-brand {
-    display: block;
-  }
-}
-@media (max-width: 480px) {
-  .container {
-    /* banner */
-    /* menu */
-  }
-  .container .banner .info {
-    padding-left: 22%;
-    padding-right: 0px;
-  }
-  .container .banner .info .name h1 {
-    font-size: 20px;
-  }
-  .container .banner .info .name h3 {
-    font-size: 16px;
-  }
-}
-@media (max-width: 1024px) and (min-width: 741px) {
-  .container.home .main #skills .content p {
-    min-width: 100% !important;
-  }
-}
 /* CSS For Home*/
 .container.home .main {
   margin-top: 10px;
@@ -189,4 +150,46 @@ html {
 }
 .container.library .layout .code code {
   font-size: 16px;
+}
+
+/* Responsive */
+@media (max-width: 740px) {
+  .container {
+    /* banner */
+    /* menu */
+  }
+  .container .banner .info {
+    padding-left: 25%;
+  }
+  .container .banner .info .name h1 {
+    font-size: 25px;
+  }
+  .container .menu .navbar-brand {
+    display: block;
+  }
+}
+@media (max-width: 480px) {
+  .container {
+    /* banner */
+    /* menu */
+  }
+  .container .banner .info {
+    padding-left: 22%;
+  }
+  .container .banner .info .name h1 {
+    font-size: 20px;
+  }
+  .container .banner .info .name h3 {
+    font-size: 16px;
+  }
+}
+@media (max-width: 1024px) and (min-width: 741px) {
+  .container.home .main #skills .content p {
+    min-width: 100% !important;
+  }
+}
+@media (max-width: 740px) {
+  .container.home .main .left {
+    border-right: none;
+  }
 }

@@ -4,7 +4,6 @@
         .banner {
             .info {
                 padding-left: 25%;
-                padding-right: 0px;
                 .name {
                     h1 {
                         font-size: 25px;
@@ -27,7 +26,6 @@
         .banner {
             .info {
                 padding-left: 22%;
-                padding-right: 0px;
                 .name {
                     h1 {
                         font-size: 20px;
@@ -58,3 +56,13 @@
         }
     }
 }
+@media (max-width: 740px){
+    .container.home{
+        .main{
+            .left {
+                border-right: none;
+            }
+        }
+    }
+}
+

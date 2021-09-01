@@ -22,7 +22,6 @@ html{
       background-color: $banner-bc;
       color: #fff;
       padding-left: 35%;
-      padding-right: 50px;
       position: absolute;
       left: 0;
       right: 0;
@@ -72,8 +71,6 @@ html{
     font-size: 18px;
   }
 }
-/* Responsive */
-@import "resopsive.scss";
 
 /* CSS For Home*/
 
@@ -180,3 +177,6 @@ html{
     }
   }
 }
+
+/* Responsive */
+@import "resopsive.scss";

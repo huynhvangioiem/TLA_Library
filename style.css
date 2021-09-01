@@ -102,6 +102,11 @@ html {
     font-size: 16px;
   }
 }
+@media (max-width: 1024px) and (min-width: 741px) {
+  .container.home .main #skills .content p {
+    min-width: 100% !important;
+  }
+}
 /* CSS For Home*/
 .container.home .main {
   margin-top: 10px;

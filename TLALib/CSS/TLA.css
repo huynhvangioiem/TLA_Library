@@ -14,9 +14,17 @@
   margin-left: 0;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .navbar-collapse .navbar-nav .nav-search form input[type="text"], .navbar-collapse .navbar-nav .nav-search form button {
   border: none;
   outline: none;
+}
+
+.text-right {
+  text-align: right;
 }
 
 /* Reset CSS */

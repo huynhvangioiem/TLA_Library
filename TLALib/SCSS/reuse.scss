@@ -31,3 +31,11 @@
     border: none;
     outline: none;
 }
+
+
+.text-center{
+    @extend %textCenter;
+}
+.text-right{
+    text-align: right;
+}

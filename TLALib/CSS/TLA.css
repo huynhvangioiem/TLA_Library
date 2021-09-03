@@ -1688,6 +1688,7 @@ a {
 .navbar-collapse .navbar-nav .nav-item .sub-nav {
   display: none;
   position: absolute;
+  min-width: max-content;
 }
 .navbar-collapse .navbar-nav .nav-item .sub-nav .nav-item {
   z-index: 9;

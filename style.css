@@ -55,6 +55,9 @@ html {
   align-items: center;
 }
 .container .menu {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
   margin-top: 5px;
 }
 .container .menu .navbar-brand {
@@ -92,15 +95,18 @@ html {
   font-size: 18px;
   text-align: justify;
 }
-.container.home .main #skills .content ul, .container.home .main #interest .content ul {
+.container.home .main #skills .content ul,
+.container.home .main #interest .content ul {
   list-style: circle;
   padding-left: 20px;
 }
-.container.home .main #skills .content ul li p, .container.home .main #interest .content ul li p {
+.container.home .main #skills .content ul li p,
+.container.home .main #interest .content ul li p {
   display: inline-block;
   min-width: 50%;
 }
-.container.home .main #skills .content ul li i, .container.home .main #interest .content ul li i {
+.container.home .main #skills .content ul li i,
+.container.home .main #interest .content ul li i {
   color: #4fa4d8;
 }
 .container.home .main #workExperience .content + .content {
@@ -111,6 +117,7 @@ html {
 .container.library .layout .demo .container-fluid {
   background-color: #fff;
   text-align: center;
+  overflow-x: auto;
 }
 
 .container.library .layout .title {

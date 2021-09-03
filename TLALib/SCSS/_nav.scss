@@ -50,6 +50,7 @@
         .sub-nav {
           display: none;
           position: absolute;
+          min-width: max-content;
           // .sub-nav .nav-item
           .nav-item {
             z-index: 9;

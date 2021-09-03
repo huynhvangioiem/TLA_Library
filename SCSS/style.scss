@@ -1,6 +1,6 @@
 //config
 $banner-bc: #4fa4d8;
-html{
+html {
   scroll-behavior: smooth;
   line-height: 1.5;
 }
@@ -57,65 +57,69 @@ html{
   }
   /* menu */
   .menu {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
     margin-top: 5px;
     .navbar-brand {
       display: none;
     }
   }
   /*Footer*/
-  .footer{
+  .footer {
     padding-top: 15px;
     padding-bottom: 15px;
     background-color: #90b7d0;
-    color:#fff;
+    color: #fff;
     font-size: 18px;
   }
 }
 
 /* CSS For Home*/
 
-.container.home{
-  .main{
+.container.home {
+  .main {
     margin-top: 10px;
-    .left{
+    .left {
       border-right: 1px solid $banner-bc;
     }
-    .items{
+    .items {
       border-top: 1px solid $banner-bc;
       padding-top: 15px;
       padding-bottom: 15px;
-      .title{
+      .title {
         margin-bottom: 5px;
-        h3{
+        h3 {
           text-transform: uppercase;
           color: $banner-bc;
           font-weight: bold;
         }
       }
-      .content{
+      .content {
         font-size: 18px;
         text-align: justify;
       }
     }
-    #skills,#interest{
-      .content{
-        ul{
+    #skills,
+    #interest {
+      .content {
+        ul {
           list-style: circle;
           padding-left: 20px;
-          li{
-            p{
+          li {
+            p {
               display: inline-block;
-              min-width:50%
+              min-width: 50%;
             }
-            i{
+            i {
               color: $banner-bc;
             }
           }
         }
       }
     }
-    #workExperience{
-      .content+.content{
+    #workExperience {
+      .content + .content {
         margin-top: 15px;
       }
     }
@@ -127,6 +131,7 @@ html{
   .container-fluid {
     background-color: #fff;
     text-align: center;
+    overflow-x: auto;
   }
 }
 .container.library {
@@ -164,7 +169,7 @@ html{
         }
       }
     }
-    .example{
+    .example {
       background-color: #fff;
       padding: 10px;
       padding-left: 40px;

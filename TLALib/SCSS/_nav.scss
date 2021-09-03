@@ -71,7 +71,7 @@
               top: 0;
               padding-left: 15px;
               box-sizing: content-box;
-                width: 100%;
+              width: 100%;
             }
           }
           .sub-nav + a::after {
@@ -260,7 +260,7 @@
           flex-direction: column-reverse;
           flex-wrap: wrap;
           margin-left: unset;
-          border-top: 1px solid #f1f1f1;
+          border-top: 1px solid #cccccc;
           a {
             flex: 0 0 100%;
           }
@@ -276,19 +276,25 @@
             display: block;
             position: relative;
             flex: 0 0 100%;
-            padding-left: 25px !important;
+            padding-left: unset !important;
             top: unset !important;
             left: unset !important;
-            width: auto!important;
+            width: auto !important;
             .nav-item {
               background-color: unset;
               box-shadow: unset;
-              border: none;
               a {
                 background-color: inherit;
                 color: inherit;
-                &::after{
+                padding-left: 20px;
+                border: none;
+                &::after {
                   content: none;
+                }
+              }
+              > .sub-nav {
+                a {
+                  padding-left: 40px;
                 }
               }
               &:hover {

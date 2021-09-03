@@ -1837,7 +1837,7 @@ a {
     flex-direction: column-reverse;
     flex-wrap: wrap;
     margin-left: unset;
-    border-top: 1px solid #f1f1f1;
+    border-top: 1px solid #cccccc;
   }
   .navbar-collapse .navbar-nav .nav-item a {
     flex: 0 0 100%;
@@ -1852,7 +1852,7 @@ a {
     display: block;
     position: relative;
     flex: 0 0 100%;
-    padding-left: 25px !important;
+    padding-left: unset !important;
     top: unset !important;
     left: unset !important;
     width: auto !important;
@@ -1860,14 +1860,18 @@ a {
   .navbar-collapse .navbar-nav .nav-item .sub-nav .nav-item {
     background-color: unset;
     box-shadow: unset;
-    border: none;
   }
   .navbar-collapse .navbar-nav .nav-item .sub-nav .nav-item a {
     background-color: inherit;
     color: inherit;
+    padding-left: 20px;
+    border: none;
   }
   .navbar-collapse .navbar-nav .nav-item .sub-nav .nav-item a::after {
     content: none;
+  }
+  .navbar-collapse .navbar-nav .nav-item .sub-nav .nav-item > .sub-nav a {
+    padding-left: 40px;
   }
   .navbar-collapse .navbar-nav .nav-item .sub-nav .nav-item:hover > a {
     background-color: rgba(0, 0, 0, 0.2);

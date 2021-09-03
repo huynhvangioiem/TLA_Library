@@ -1712,11 +1712,13 @@ a {
 }
 .navbar-collapse .navbar-nav .nav-item .sub-nav .sub-nav + a::after {
   content: "";
-  float: right;
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  transform: translateY(-50%);
   border-style: solid;
   border-width: 5px 0 5px 5px;
   border-color: transparent transparent transparent #9a9a9a;
-  margin-top: 1px;
 }
 .navbar-collapse .navbar-nav .nav-item:hover > .sub-nav {
   display: block;

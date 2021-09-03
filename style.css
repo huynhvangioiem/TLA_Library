@@ -55,6 +55,7 @@ html {
   align-items: center;
 }
 .container .menu {
+  z-index: 100;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -117,55 +118,58 @@ html {
 }
 
 /* CSS For library.html */
-.container.library .layout .demo .container-fluid {
-  background-color: #fff;
-  text-align: center;
-  overflow-x: auto;
-}
-
-.container.library .layout .title {
+.container.library .title {
   text-transform: uppercase;
   font-weight: bold;
+  margin-top: 15px;
 }
-.container.library .layout .sub_title {
+.container.library .sub_title {
   text-transform: capitalize;
   font-weight: bold;
 }
-.container.library .layout .demo {
+.container.library .demo .container-fluid {
+  background-color: #fff;
+  text-align: center;
+}
+.container.library .code {
+  font-size: 16px;
+}
+.container.library #TLA_layout .demo {
   font-size: 20px;
 }
-.container.library .layout .demo .wrapDemo {
+.container.library #TLA_layout .demo .wrapDemo {
   overflow-x: auto;
 }
-.container.library .layout .demo .wrapDemo .container-fluid {
+.container.library #TLA_layout .demo .container-fluid {
   min-width: 1024px;
 }
-.container.library .layout .demo .row {
+.container.library #TLA_layout .demo .container-fluid .row {
   margin-top: 5px;
   margin-bottom: 5px;
 }
-.container.library .layout .demo .row > div {
+.container.library #TLA_layout .demo .container-fluid .row > div {
   padding-top: 10px;
   padding-bottom: 10px;
   border: 1px solid #fff;
   background-color: #ccc;
 }
-.container.library .layout .demo.nested .container-fluid {
+.container.library #TLA_layout .demo.nested .container-fluid {
   background-color: #ccc;
 }
-.container.library .layout .demo.nested .container-fluid .row {
+.container.library #TLA_layout .demo.nested .container-fluid .row {
   margin-top: unset;
   margin-bottom: unset;
   align-items: center;
 }
-.container.library .layout .example {
+.container.library #TLA_layout .demo .example {
   background-color: #fff;
   padding: 10px;
   padding-left: 40px;
   list-style-type: decimal;
 }
-.container.library .layout .code code {
-  font-size: 16px;
+.container.library #TLA_nav .demo .container-fluid {
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 /* Responsive */

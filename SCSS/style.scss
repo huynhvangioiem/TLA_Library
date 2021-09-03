@@ -57,6 +57,7 @@ html {
   }
   /* menu */
   .menu {
+    z-index: 100;
     position: -webkit-sticky;
     position: sticky;
     top: 0;
@@ -120,7 +121,7 @@ html {
     }
     #workExperience {
       .content {
-        p.link{
+        p.link {
           overflow-x: auto;
         }
       }
@@ -132,43 +133,48 @@ html {
 }
 
 /* CSS For library.html */
-%demo {
-  .container-fluid {
-    background-color: #fff;
-    text-align: center;
-    overflow-x: auto;
-  }
-}
 .container.library {
-  .layout {
-    .title {
-      text-transform: uppercase;
-      font-weight: bold;
+  .title {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 15px;
+  }
+  .sub_title {
+    text-transform: capitalize;
+    font-weight: bold;
+  }
+  .description {
+  }
+  .demo {
+    .container-fluid {
+      background-color: #fff;
+      text-align: center;
     }
-    .sub_title {
-      text-transform: capitalize;
-      font-weight: bold;
-    }
+  }
+  .code {
+    font-size: 16px;
+  }
+  //for layout
+  #TLA_layout {
     .demo {
-      @extend %demo;
       font-size: 20px;
-      .wrapDemo{
+      .wrapDemo {
         overflow-x: auto;
-        .container-fluid{
-          min-width: 1024px;
+      }
+      .container-fluid {
+        min-width: 1024px;
+        .row {
+          margin-top: 5px;
+          margin-bottom: 5px;
+          > div {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border: 1px solid #fff;
+            background-color: #ccc;
+          }
         }
       }
-      .row {
-        margin-top: 5px;
-        margin-bottom: 5px;
-        > div {
-          padding-top: 10px;
-          padding-bottom: 10px;
-          border: 1px solid #fff;
-          background-color: #ccc;
-        }
-      }
-      //demo for nested
+      //for nested layout demo
       &.nested {
         .container-fluid {
           background-color: #ccc;
@@ -179,20 +185,23 @@ html {
           }
         }
       }
+      .example {
+        background-color: #fff;
+        padding: 10px;
+        padding-left: 40px;
+        list-style-type: decimal;
+      }
     }
-    .example {
-      background-color: #fff;
-      padding: 10px;
-      padding-left: 40px;
-      list-style-type: decimal;
-    }
-    .code {
-      code {
-        font-size: 16px;
+  }
+  //for navigation
+  #TLA_nav{
+    .demo{
+      .container-fluid{
+        padding-top: 10px;
+        padding-bottom: 10px;
       }
     }
   }
 }
-
 /* Responsive */
 @import "resopsive.scss";

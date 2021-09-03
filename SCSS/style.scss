@@ -119,6 +119,11 @@ html {
       }
     }
     #workExperience {
+      .content {
+        p.link{
+          overflow-x: auto;
+        }
+      }
       .content + .content {
         margin-top: 15px;
       }
@@ -147,6 +152,12 @@ html {
     .demo {
       @extend %demo;
       font-size: 20px;
+      .wrapDemo{
+        overflow-x: auto;
+        .container-fluid{
+          min-width: 1024px;
+        }
+      }
       .row {
         margin-top: 5px;
         margin-bottom: 5px;

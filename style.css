@@ -109,6 +109,9 @@ html {
 .container.home .main #interest .content ul li i {
   color: #4fa4d8;
 }
+.container.home .main #workExperience .content p.link {
+  overflow-x: auto;
+}
 .container.home .main #workExperience .content + .content {
   margin-top: 15px;
 }
@@ -130,6 +133,12 @@ html {
 }
 .container.library .layout .demo {
   font-size: 20px;
+}
+.container.library .layout .demo .wrapDemo {
+  overflow-x: auto;
+}
+.container.library .layout .demo .wrapDemo .container-fluid {
+  min-width: 1024px;
 }
 .container.library .layout .demo .row {
   margin-top: 5px;

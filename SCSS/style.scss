@@ -160,7 +160,7 @@ html {
       font-size: 20px;
       .wrapDemo {
         overflow-x: auto;
-        .container-fluid{
+        .container-fluid {
           min-width: 1024px;
         }
       }
@@ -179,11 +179,18 @@ html {
       //for nested layout demo
       &.nested {
         .container-fluid {
-          background-color: #ccc;
+          // width: 1024px;
+          border: 1px solid #000;
           .row {
-            margin-top: unset;
-            margin-bottom: unset;
-            align-items: center;
+            margin-top: 0;
+            margin-bottom: 0;
+            div {
+              padding-top: 0;
+              padding-bottom: 0;
+              p{
+                padding: 10px;
+              }
+            }
           }
         }
       }
@@ -196,9 +203,9 @@ html {
     }
   }
   //for navigation
-  #TLA_nav{
-    .demo{
-      .container-fluid{
+  #TLA_nav {
+    .demo {
+      .container-fluid {
         padding-top: 10px;
         padding-bottom: 10px;
       }

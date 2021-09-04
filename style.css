@@ -154,12 +154,18 @@ html {
   background-color: #ccc;
 }
 .container.library #TLA_layout .demo.nested .container-fluid {
-  background-color: #ccc;
+  border: 1px solid #000;
 }
 .container.library #TLA_layout .demo.nested .container-fluid .row {
-  margin-top: unset;
-  margin-bottom: unset;
-  align-items: center;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.container.library #TLA_layout .demo.nested .container-fluid .row div {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.container.library #TLA_layout .demo.nested .container-fluid .row div p {
+  padding: 10px;
 }
 .container.library #TLA_layout .demo .example {
   background-color: #fff;

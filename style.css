@@ -153,9 +153,6 @@ html {
   border: 1px solid #fff;
   background-color: #ccc;
 }
-.container.library #TLA_layout .demo.nested .container-fluid {
-  border: 1px solid #000;
-}
 .container.library #TLA_layout .demo.nested .container-fluid .row {
   margin-top: 0;
   margin-bottom: 0;
@@ -176,6 +173,7 @@ html {
 .container.library #TLA_nav .demo .container-fluid {
   padding-top: 10px;
   padding-bottom: 10px;
+  text-align: unset;
 }
 
 /* Responsive */
@@ -220,5 +218,37 @@ html {
 @media (max-width: 740px) {
   .container.home .main .left {
     border-right: none;
+  }
+}
+@media (max-width: 768px) {
+  .navbar #nav-1:checked ~ .navbar-collapse.nav-1 {
+    display: block;
+  }
+  .navbar #nav-2:checked ~ .navbar-collapse.nav-2 {
+    display: block;
+  }
+  .navbar #nav-3:checked ~ .navbar-collapse.nav-3 {
+    display: block;
+  }
+  .navbar #nav-4:checked ~ .navbar-collapse.nav-4 {
+    display: block;
+  }
+  .navbar #nav-5:checked ~ .navbar-collapse.nav-5 {
+    display: block;
+  }
+  .navbar #nav-6:checked ~ .navbar-collapse.nav-6 {
+    display: block;
+  }
+  .navbar #nav-7:checked ~ .navbar-collapse.nav-7 {
+    display: block;
+  }
+  .navbar #nav-8:checked ~ .navbar-collapse.nav-8 {
+    display: block;
+  }
+  .navbar #nav-9:checked ~ .navbar-collapse.nav-9 {
+    display: block;
+  }
+  .navbar #nav-10:checked ~ .navbar-collapse.nav-10 {
+    display: block;
   }
 }

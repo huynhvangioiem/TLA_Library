@@ -143,8 +143,8 @@ html {
     text-transform: capitalize;
     font-weight: bold;
   }
-  .description {
-  }
+  // .description {
+  // }
   .demo {
     .container-fluid {
       background-color: #fff;
@@ -179,8 +179,6 @@ html {
       //for nested layout demo
       &.nested {
         .container-fluid {
-          // width: 1024px;
-          border: 1px solid #000;
           .row {
             margin-top: 0;
             margin-bottom: 0;
@@ -208,6 +206,7 @@ html {
       .container-fluid {
         padding-top: 10px;
         padding-bottom: 10px;
+        text-align: unset;
       }
     }
   }

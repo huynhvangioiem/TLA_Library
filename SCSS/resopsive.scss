@@ -68,4 +68,18 @@
         }
     }
 }
-
+// library
+@media (max-width:768px){
+    @mixin navDemo {
+        @for $i from 1 through 10{
+            #nav-#{$i}:checked {
+                ~ .navbar-collapse.nav-#{$i}{
+                    display: block;
+                }
+            }
+        }
+    }
+    .navbar {
+        @include navDemo();
+    }
+}

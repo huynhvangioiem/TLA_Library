@@ -250,11 +250,6 @@
       display: inline-block;
       padding: 15px;
     }
-    #nav-check:checked {
-      ~ .navbar-collapse {
-        display: block;
-      }
-    }
     &-collapse {
       display: none;
       .navbar-nav {
@@ -318,6 +313,9 @@
           }
         }
       }
+    }
+    &-collapse.close {
+      display: none !important;
     }
   }
 }

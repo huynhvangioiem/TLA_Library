@@ -1,3 +1,13 @@
+@media (max-width: 768px) {
+    .container {
+        .menu {
+            .navbar-collapse {
+                height: 50vh;
+                overflow-y: auto;
+            }
+        }
+    }
+}
 @media (max-width: 740px) {
     .container {
         /* banner */
@@ -59,9 +69,9 @@
         }
     }
 }
-@media (max-width: 740px){
-    .container.home{
-        .main{
+@media (max-width: 740px) {
+    .container.home {
+        .main {
             .left {
                 border-right: none;
             }
@@ -69,11 +79,11 @@
     }
 }
 // library
-@media (max-width:768px){
+@media (max-width: 768px) {
     @mixin navDemo {
-        @for $i from 1 through 10{
+        @for $i from 1 through 10 {
             #nav-#{$i}:checked {
-                ~ .navbar-collapse.nav-#{$i}{
+                ~ .navbar-collapse.nav-#{$i} {
                     display: block;
                 }
             }

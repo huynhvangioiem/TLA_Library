@@ -64,10 +64,6 @@ html {
 .container .menu .navbar-brand {
   display: none;
 }
-.container .menu .navbar-collapse {
-  height: 50vh;
-  overflow-y: auto;
-}
 .container .footer {
   padding-top: 15px;
   padding-bottom: 15px;
@@ -181,6 +177,12 @@ html {
 }
 
 /* Responsive */
+@media (max-width: 768px) {
+  .container .menu .navbar-collapse {
+    height: 50vh;
+    overflow-y: auto;
+  }
+}
 @media (max-width: 740px) {
   .container {
     /* banner */

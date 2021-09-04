@@ -1885,8 +1885,8 @@ a {
   .navbar-collapse .navbar-nav .nav-search input[type="text"] {
     flex: 1;
   }
-  .navbar-collapse.close {
-    display: none !important;
+  .navbar-collapse.show {
+    display: block;
   }
 }
 /* TLA Button */

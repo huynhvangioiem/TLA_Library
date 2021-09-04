@@ -2,9 +2,15 @@
 $(document).ready(function() {
     //toggler menu if screen <768px
     $(".navbar-toggler").click(function() {
-        $($(this).attr("data-target")).toggle();  
+        var id = $(this).attr("data-target");
+        if($(id).hasClass("show")){
+            $($(id).removeClass("show"));
+        }else{
+            console.log(false);
+            $($(id).addClass("show"));  
+        }
     });
     $(".nav-item").click(function(){
-        $(".navbar-collapse").hide();
+        $(".navbar-collapse").removeClass("show");
     })
 })

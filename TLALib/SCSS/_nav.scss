@@ -314,8 +314,8 @@
         }
       }
     }
-    &-collapse.close {
-      display: none !important;
+    &-collapse.show {
+      display: block;
     }
   }
 }

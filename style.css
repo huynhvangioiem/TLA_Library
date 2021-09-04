@@ -140,7 +140,7 @@ html {
 .container.library #TLA_layout .demo .wrapDemo {
   overflow-x: auto;
 }
-.container.library #TLA_layout .demo .container-fluid {
+.container.library #TLA_layout .demo .wrapDemo .container-fluid {
   min-width: 1024px;
 }
 .container.library #TLA_layout .demo .container-fluid .row {

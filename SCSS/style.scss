@@ -160,9 +160,11 @@ html {
       font-size: 20px;
       .wrapDemo {
         overflow-x: auto;
+        .container-fluid{
+          min-width: 1024px;
+        }
       }
       .container-fluid {
-        min-width: 1024px;
         .row {
           margin-top: 5px;
           margin-bottom: 5px;

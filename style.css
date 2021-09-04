@@ -64,6 +64,10 @@ html {
 .container .menu .navbar-brand {
   display: none;
 }
+.container .menu .navbar-collapse {
+  height: 50vh;
+  overflow-y: auto;
+}
 .container .footer {
   padding-top: 15px;
   padding-bottom: 15px;

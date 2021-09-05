@@ -6,7 +6,6 @@ html {
 .container {
   background-color: aliceblue;
   /* banner */
-  /* welcome */
   /* menu */
   /*Footer*/
 }
@@ -43,16 +42,6 @@ html {
 }
 .container .banner .info .contact h4 i {
   margin-right: 10px;
-}
-.container .welcome {
-  border-bottom: 5px solid #4fa4d8;
-  height: 50px;
-  color: chartreuse;
-  font-size: 25px;
-  font-weight: bold;
-  background-color: darkorange;
-  letter-spacing: 2px;
-  align-items: center;
 }
 .container .menu {
   z-index: 100;
@@ -118,6 +107,19 @@ html {
 }
 
 /* CSS For library.html */
+.container.library {
+  /* welcome */
+}
+.container.library .welcome {
+  background-color: darkorange;
+  color: chartreuse;
+  border-bottom: 5px solid #4fa4d8;
+  height: 50px;
+  font-size: 25px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  align-items: center;
+}
 .container.library .title {
   text-transform: uppercase;
   font-weight: bold;
@@ -133,6 +135,9 @@ html {
 }
 .container.library .code {
   font-size: 16px;
+}
+.container.library .code .hljs {
+  background-color: #fff;
 }
 .container.library #TLA_layout .demo {
   font-size: 20px;
@@ -151,7 +156,7 @@ html {
   padding-top: 10px;
   padding-bottom: 10px;
   border: 1px solid #fff;
-  background-color: #ccc;
+  background-color: burlywood;
 }
 .container.library #TLA_layout .demo.nested .container-fluid .row {
   margin-top: 0;

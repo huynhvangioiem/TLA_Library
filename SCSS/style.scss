@@ -2,7 +2,7 @@
 $backgroundColor-info: #4fa4d8;
 $backgroundColor-page: aliceblue;
 $backgroundColor-footer: #90b7d0;
-  //home
+//home
 $color-title: #4fa4d8;
 $color-line: #4fa4d8;
 //library
@@ -73,6 +73,7 @@ html {
     background-color: $backgroundColor-footer;
     color: #fff;
     font-size: 18px;
+    align-items: center;
   }
 }
 
@@ -157,6 +158,10 @@ html {
   // .description {
   // }
   .demo {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     .container-fluid {
       background-color: #fff;
       text-align: center;
@@ -164,7 +169,7 @@ html {
   }
   .code {
     font-size: 16px;
-    .hljs{
+    .hljs {
       background-color: $backgroundColor-code;
     }
   }
@@ -199,7 +204,7 @@ html {
             div {
               padding-top: 0;
               padding-bottom: 0;
-              p{
+              p {
                 padding: 10px;
               }
             }
@@ -224,10 +229,29 @@ html {
       }
     }
   }
-  #TLA_button{
-    .demo{
-      .row{
-        justify-content: space-around;
+  #TLA_button {
+    .demo {
+      .container-fluid {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        .row {
+          justify-content: space-around;
+        }
+      }
+    }
+  }
+  #TLA_Toast {
+    .demo {
+      .container-fluid {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        .row {
+          justify-content: space-around;
+        }
+        #toast {
+          background-color: unset;
+          text-align: left;
+        }
       }
     }
   }

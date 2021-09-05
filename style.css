@@ -59,6 +59,7 @@ html {
   background-color: #90b7d0;
   color: #fff;
   font-size: 18px;
+  align-items: center;
 }
 
 /* CSS For Home*/
@@ -129,6 +130,12 @@ html {
   text-transform: capitalize;
   font-weight: bold;
 }
+.container.library .demo {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
 .container.library .demo .container-fluid {
   background-color: #fff;
   text-align: center;
@@ -180,8 +187,23 @@ html {
   padding-bottom: 10px;
   text-align: unset;
 }
-.container.library #TLA_button .demo .row {
+.container.library #TLA_button .demo .container-fluid {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.container.library #TLA_button .demo .container-fluid .row {
   justify-content: space-around;
+}
+.container.library #TLA_Toast .demo .container-fluid {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.container.library #TLA_Toast .demo .container-fluid .row {
+  justify-content: space-around;
+}
+.container.library #TLA_Toast .demo .container-fluid #toast {
+  background-color: unset;
+  text-align: left;
 }
 
 /* Responsive */

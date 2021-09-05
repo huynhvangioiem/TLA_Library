@@ -1,8 +1,10 @@
-$(document).ready(function () {
-    for (var i = 0; i <= 10; i++) {
-        
-    }
-    $(".nav-item").click(function () {
-        $("#nav-check").prop("checked", false);
+/* Toasts */
+function showToast(style) {
+    toast({
+        title: "This is title of message.", //Tiêu đề thông báo
+        message: "This is a content of message. This message's style is " + style, //Nội dung thông báo
+        style: style, //Kiểu thông báo
+        duration: 5000, // default 10s
+        // iconType: "info" //Loại thông báo (success,info,warning,error)
     })
-})
+}

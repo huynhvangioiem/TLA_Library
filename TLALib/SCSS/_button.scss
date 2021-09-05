@@ -3,9 +3,6 @@
 // version: 1.0
 // Date: 05/09/2021
 
-@import "config";
-@import "reuse";
-
 //btnStandard
 @mixin btnStandard($name,$color) {
     &-#{$name}{

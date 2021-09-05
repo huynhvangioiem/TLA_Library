@@ -21,6 +21,7 @@
   <link rel="stylesheet" href="TLALib/CSS/TLA.css">
 
   <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
 
 
 </head>
@@ -92,7 +93,7 @@
                     <li class="nav-item"><a href="./librabry.html#basicBtn">Basic Buttons</a></li>
                     <li class="nav-item"><a href="./librabry.html#btnOutline">Outline Buttons</a></li>
                     <li class="nav-item"><a href="./librabry.html#btnRounded">Rounded Buttons</a></li>
-                    <li class="nav-item"><a href="./librabry.html#btnSocial">Outline Social</a></li>
+                    <li class="nav-item"><a href="./librabry.html#btnSocial">Social Buttons</a></li>
                   </ul>
                   <a href="./librabry.html#TLA_button">Button</a>
                 </li>
@@ -1257,10 +1258,150 @@
         </pre>
       </div>
     </div>
+    <!-- Toast Message -->
+    <div class="row" id="TLA_Toast">
+      <div class="col-12 col-m-12 col-s-12 title">IV. Toast Message</div>
+      <div class="col-12 col-m-12 col-s-12 sub_title">1. Basic Toast</div>
+      <div class="col-12 col-m-12 col-s-12 description">
+        <p>Push notifications to your visitors with a toast, a lightweight and easily customizable alert message. Click
+          these buttons to call toast messages.</p>
+      </div>
+      <div class="col-12 col-m-12 col-s-12 demo">
+        <div class="container-fluid">
+          <div class="row">
+            <button type="button" onclick="showToast('primary');" class="btn btn-primary">Primary</button>
+            <button type="button" onclick="showToast('secondary');" class="btn btn-secondary">Secondary</button>
+            <button type="button" onclick="showToast('success');" class="btn btn-success">Success</button>
+            <button type="button" onclick="showToast('danger');" class="btn btn-danger">Danger</button>
+            <button type="button" onclick="showToast('warning');" class="btn btn-warning">Warning</button>
+            <button type="button" onclick="showToast('info');" class="btn btn-info">Info</button>
+            <button type="button" onclick="showToast('light');" class="btn btn-light">Light</button>
+            <button type="button" onclick="showToast('dark');" class="btn btn-dark">Dark</button>
+          </div>
+          <div id="toast"></div>
+        </div>
+      </div>
+      <div class="col-12 col-m-12 col-s-12 sub_title">How to use?</div>
+      <div class="col-12 col-m-12 col-s-12 description">
+        <p>With toast messages you can call it anywhere as a javascript function! But in html yoy must have <i>&#60;div
+            id="toast"&#62;&#60;/div&#62;</i>.This example use a button to call the toast. Its source code is as
+          follows:</p>
+      </div>
+      <div class="col-12 col-m-12 col-s-12 code">
+        <pre>
+          <code class="html">
+&#60;!-- HTML --&#62;
+&#60;div id="toast"&#62;&#60;/div&#62;
+&#60;button type="button" onclick="showToast();" class="btn btn-primary"&#62;Primary&#60;/button&#62;
+&#60;!-- Javascript --&#62;
+&#60;script&#62;
+  function showToast() { 
+    toast({ 
+      title: "This is title of message.", //Message title
+      message: " This is a content of message. This message's style Success!", //Message content 
+      style: "success", //Style of message 
+      duration: 5000, //duration - default duration is 10s 
+      iconType: "info" //icon for message - have four icons: info, success, warning, danger. If you omit this attribute, the default will be same the "style" or not displayed
+    }); 
+  }
+&#60;/script&#62;
+          </code>
+        </pre>
+      </div>
+      <div class="col-12 col-m-12 col-s-12 sub_title">2. Colored Toast</div>
+      <div class="col-12 col-m-12 col-s-12 description">
+        <p>If you want to change the background color for toast. You can find out the example follow.</p>
+      </div>
+      <div class="col-12 col-m-12 col-s-12 demo">
+        <div class="container-fluid">
+          <div class="row">
+            <button type="button" onclick="showToast('primary-colored');" class="btn btn-primary">Primary</button>
+            <button type="button" onclick="showToast('secondary-colored');" class="btn btn-secondary">Secondary</button>
+            <button type="button" onclick="showToast('success-colored');" class="btn btn-success">Success</button>
+            <button type="button" onclick="showToast('danger-colored');" class="btn btn-danger">Danger</button>
+            <button type="button" onclick="showToast('warning-colored');" class="btn btn-warning">Warning</button>
+            <button type="button" onclick="showToast('info-colored');" class="btn btn-info">Info</button>
+            <button type="button" onclick="showToast('light-colored');" class="btn btn-light">Light</button>
+            <button type="button" onclick="showToast('dark-colored');" class="btn btn-dark">Dark</button>
+          </div>
+          <div id="toast"></div>
+        </div>
+      </div>
+      <div class="col-12 col-m-12 col-s-12 code">
+        <pre>
+          <code class="html">
+&#60;!-- HTML --&#62;
+&#60;div id="toast"&#62;&#60;/div&#62;
+&#60;button type="button" onclick="showToast();" class="btn btn-success"&#62;Success&#60;/button&#62;
+&#60;!-- Javascript --&#62;
+&#60;script&#62;
+  function showToast() { 
+    toast({ 
+      style: "success-colored", //Style of message 
+    }); 
+  }
+&#60;/script&#62;
+          </code>
+        </pre>
+      </div>
+      <div class="col-12 col-m-12 col-s-12 sub_title">3. Outline Toast</div>
+      <div class="col-12 col-m-12 col-s-12 description">
+      </div>
+      <div class="col-12 col-m-12 col-s-12 demo">
+        <div class="container-fluid">
+          <div class="row">
+            <button type="button" onclick="showToast('primary-outline');" class="btn btn-primary">Primary</button>
+            <button type="button" onclick="showToast('secondary-outline');" class="btn btn-secondary">Secondary</button>
+            <button type="button" onclick="showToast('success-outline');" class="btn btn-success">Success</button>
+            <button type="button" onclick="showToast('danger-outline');" class="btn btn-danger">Danger</button>
+            <button type="button" onclick="showToast('warning-outline');" class="btn btn-warning">Warning</button>
+            <button type="button" onclick="showToast('info-outline');" class="btn btn-info">Info</button>
+            <button type="button" onclick="showToast('light-outline');" class="btn btn-light">Light</button>
+            <button type="button" onclick="showToast('dark-outline');" class="btn btn-dark">Dark</button>
+          </div>
+          <div id="toast"></div>
+        </div>
+      </div>
+      <div class="col-12 col-m-12 col-s-12 code">
+        <pre>
+          <code class="html">
+&#60;!-- HTML --&#62;
+&#60;div id="toast"&#62;&#60;/div&#62;
+&#60;button type="button" onclick="showToast();" class="btn btn-success"&#62;Success&#60;/button&#62;
+&#60;!-- Javascript --&#62;
+&#60;script&#62;
+  function showToast() { 
+    toast({ 
+      style: "success-colored", //Style of message 
+    }); 
+  }
+&#60;/script&#62;
+          </code>
+        </pre>
+      </div>
+    </div>
     <div class="row footer">
       <div class="col-4 col-m-4 col-s-12 text-center"><a href="./">Copyright © 2021 TLA</a></div>
-      <div class="col-3 col-m-4 col-s-12 col-o-5 text-center"><a target=_blank
-          href="https://www.facebook.com/huynhvangioiem"><i class="fab fa-facebook-square"></i> /huynhvangioiem</a>
+      <div class="col-3 col-m-4 col-s-12 col-o-5 text-center">
+        <a target="_blank" class="btn btn-social" style="background-color: #333333;"
+          href="https://github.com/huynhvangioiem">
+          <i class="fab fa-github"></i>
+        </a>
+        <a target="_blank" class="btn btn-social" style="background-color: #3b5998;"
+          href="https://www.facebook.com/huynhvangioiem">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a target="_blank" class="btn btn-social" style="background-color: #F57C00;"
+          href="https://nhatkytoilaai.blogspot.com/">
+          <i class="fab fa-blogger"></i>
+        </a>
+        <a class="btn btn-social" style="background-color: #ed302f;"
+          href="https://www.youtube.com/channel/UCUjya8sBXS40uYW5S1Yi7sA">
+          <i class="fab fa-youtube"></i>
+        </a>
+        <a target="_blank" class="btn btn-social" style="background-color: #fff" href="https://zalo.me/0335687425">
+          <img width="16px" src="https://chat.zalo.me/favicon-96x96.v1.png" alt="">
+        </a>
       </div>
     </div>
   </div>

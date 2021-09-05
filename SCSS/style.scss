@@ -224,6 +224,13 @@ html {
       }
     }
   }
+  #TLA_button{
+    .demo{
+      .row{
+        justify-content: space-around;
+      }
+    }
+  }
 }
 /* Responsive */
 @import "resopsive.scss";

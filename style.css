@@ -180,6 +180,9 @@ html {
   padding-bottom: 10px;
   text-align: unset;
 }
+.container.library #TLA_button .demo .row {
+  justify-content: space-around;
+}
 
 /* Responsive */
 @media (max-width: 768px) {

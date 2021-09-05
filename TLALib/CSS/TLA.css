@@ -18,7 +18,7 @@
   text-align: center;
 }
 
-.navbar-collapse .navbar-nav .nav-search form input[type="text"], .navbar-collapse .navbar-nav .nav-search form button {
+.navbar-collapse .navbar-nav .nav-search form input[type="text"], .navbar-collapse .navbar-nav .nav-search form button, .btn {
   border: none;
   outline: none;
 }
@@ -1890,6 +1890,144 @@ a {
   }
 }
 /* TLA Button */
+.row.no-gutters .col {
+  padding-left: 0;
+}
+
+.row.no-gutters .col {
+  padding-right: 0;
+}
+
+.row.no-gutters {
+  margin-right: 0;
+}
+
+.row.no-gutters {
+  margin-left: 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.navbar-collapse .navbar-nav .nav-search form input[type="text"], .navbar-collapse .navbar-nav .nav-search form button, .btn {
+  border: none;
+  outline: none;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  background-color: transparent;
+  padding: 10px 14px;
+  font-size: 16px;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.btn:hover {
+  opacity: 0.8;
+}
+.btn-rounded {
+  border-radius: 10rem;
+}
+.btn-social i {
+  width: 16px;
+}
+.btn-primary {
+  background-color: #0069d9;
+}
+.btn-outline-primary {
+  color: #0069d9;
+  border: 1px solid #0069d9;
+}
+.btn-outline-primary:hover {
+  background-color: #0069d9;
+  color: #fff;
+}
+.btn-secondary {
+  background-color: #5a6268;
+}
+.btn-outline-secondary {
+  color: #5a6268;
+  border: 1px solid #5a6268;
+}
+.btn-outline-secondary:hover {
+  background-color: #5a6268;
+  color: #fff;
+}
+.btn-success {
+  background-color: #218838;
+}
+.btn-outline-success {
+  color: #218838;
+  border: 1px solid #218838;
+}
+.btn-outline-success:hover {
+  background-color: #218838;
+  color: #fff;
+}
+.btn-danger {
+  background-color: #c82333;
+}
+.btn-outline-danger {
+  color: #c82333;
+  border: 1px solid #c82333;
+}
+.btn-outline-danger:hover {
+  background-color: #c82333;
+  color: #fff;
+}
+.btn-warning {
+  background-color: #e0a800;
+}
+.btn-outline-warning {
+  color: #e0a800;
+  border: 1px solid #e0a800;
+}
+.btn-outline-warning:hover {
+  background-color: #e0a800;
+  color: #fff;
+}
+.btn-info {
+  background-color: #138496;
+}
+.btn-outline-info {
+  color: #138496;
+  border: 1px solid #138496;
+}
+.btn-outline-info:hover {
+  background-color: #138496;
+  color: #fff;
+}
+.btn-light {
+  background-color: #e2e6ea;
+}
+.btn-outline-light {
+  color: #e2e6ea;
+  border: 1px solid #e2e6ea;
+}
+.btn-outline-light:hover {
+  background-color: #e2e6ea;
+  color: #fff;
+}
+.btn-dark {
+  background-color: #23272b;
+}
+.btn-outline-dark {
+  color: #23272b;
+  border: 1px solid #23272b;
+}
+.btn-outline-dark:hover {
+  background-color: #23272b;
+  color: #fff;
+}
+
 /* TLA Toast */
 /* TLA IMG */
 .img-responsive {

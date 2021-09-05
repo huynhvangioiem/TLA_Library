@@ -6,7 +6,6 @@ $(document).ready(function() {
         if($(id).hasClass("show")){
             $($(id).removeClass("show"));
         }else{
-            console.log(false);
             $($(id).addClass("show"));  
         }
     });

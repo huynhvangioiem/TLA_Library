@@ -245,6 +245,12 @@ html {
   .container .banner .info .name h3 {
     font-size: 16px;
   }
+  .container .btn {
+    min-width: 45%;
+  }
+  .container .btn-social {
+    min-width: unset;
+  }
 }
 @media (max-width: 1024px) and (min-width: 741px) {
   .container.home .main #skills .content p {

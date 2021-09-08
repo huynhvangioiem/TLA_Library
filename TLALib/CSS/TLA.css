@@ -2007,6 +2007,8 @@ a {
   right: 32px;
   z-index: 9999;
   display: flex;
+  width: 400px;
+  max-width: 90%;
   flex-direction: column-reverse;
 }
 
@@ -2017,7 +2019,6 @@ a {
   background-color: #fff;
   border-radius: 5px;
   padding: 20px 0;
-  width: 400px;
   border-left: 6px solid;
   box-shadow: 0 5px 8px rgba(0, 0, 0, 0.08);
   position: relative;

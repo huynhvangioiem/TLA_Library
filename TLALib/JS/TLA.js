@@ -40,7 +40,6 @@ function toast({ title = "", message = "", style = "", duration = 10000, iconTyp
                 }else icon = icons[style];
             }
             else icon = icons[iconType];
-            console.log(icon);
             //delay time (s) 
             const delay = (duration / 1000).toFixed(2);
             // Create a toast message

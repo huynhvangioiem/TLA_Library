@@ -130,6 +130,9 @@ html {
   text-transform: capitalize;
   font-weight: bold;
 }
+.container.library .description {
+  text-align: justify;
+}
 .container.library .demo {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -139,6 +142,10 @@ html {
 .container.library .demo .container-fluid {
   background-color: #fff;
   text-align: center;
+}
+.container.library .demo .btn {
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 .container.library .code {
   font-size: 16px;
@@ -204,6 +211,7 @@ html {
 .container.library #TLA_Toast .demo .container-fluid #toast {
   background-color: unset;
   text-align: left;
+  top: 60px;
 }
 
 /* Responsive */

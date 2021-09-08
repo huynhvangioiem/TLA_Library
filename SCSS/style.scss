@@ -155,6 +155,9 @@ html {
     text-transform: capitalize;
     font-weight: bold;
   }
+  .description{
+    text-align: justify;
+  }
   // .description {
   // }
   .demo {
@@ -165,6 +168,10 @@ html {
     .container-fluid {
       background-color: #fff;
       text-align: center;
+    }
+    .btn{
+      margin-top: 5px;
+      margin-bottom: 5px;
     }
   }
   .code {
@@ -251,6 +258,7 @@ html {
         #toast {
           background-color: unset;
           text-align: left;
+          top: 60px
         }
       }
     }

@@ -17,6 +17,8 @@
     right: 32px;
     z-index: 9999;
     display: flex;
+    width: $widthToastItem;
+    max-width: 90%;
     flex-direction: column-reverse;
 }
 
@@ -27,11 +29,9 @@
     background-color: $bgColorToastItem;
     border-radius: 5px;
     padding: 20px 0;
-    width: $widthToastItem;
     border-left: 6px solid;
     box-shadow: 0 5px 8px rgba(0, 0, 0, 0.08);
     position: relative;
-
     & + & {
         margin-bottom: $mbToastItem;
     }

@@ -2284,3 +2284,12 @@ a {
 .img-thumbnail {
   border: 5px solid #ccc;
 }
+
+.img-circle {
+  border-radius: 50%;
+}
+
+/* TLA form */
+.form-control {
+  width: 100%;
+}

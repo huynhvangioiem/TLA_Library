@@ -10,7 +10,7 @@ TLA Library is a dual-purpose project:
 
 ## Live Demo
 
-Visit the live site: [TLA Library on GitHub Pages](https://huynhvangioiem.github.io/TLA_Library/)
+Visit the live site: [TLA Library on GitHub Pages](https://huynhvangioiem.github.io/tla-library/)
 
 ## Features
 
@@ -38,7 +38,7 @@ Visit the live site: [TLA Library on GitHub Pages](https://huynhvangioiem.github
 ## Project Structure
 
 ```
-TLA_Library/
+tla-library/
 ├── TLALib/                    # Component library source
 │   ├── CSS/
 │   │   └── TLA.css           # Compiled library CSS
@@ -115,7 +115,7 @@ toast({
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/huynhvangioiem/TLA_Library.git
+   git clone https://github.com/huynhvangioiem/tla-library.git
    ```
 
 2. Open `index.html` in your browser to view the portfolio
